@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Registro Medico</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="Css/background.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body style="background-color: lightblue">
+       <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">MEDISHORE</a>
+                </div>
+                 <ul class="nav navbar-nav navbar-right">
+                     <li><a href="index.html"><span class="glyphicon glyphicon-log-out"></span>Logout</a></li>
+                 </ul>
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Opciones
+                            <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            
+                            <li><a href="PedirCita.html">Pedir Cita</a></li>
+                            <li><a href="VerCitasPaciente.html">Ver Citas</a></li>
+                            
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h1 style="color: black;">
+                    Registro Paciente:
+                </h1>
+                <div id="formUsuario">
+                    <h3>Ingrese sus datos</h3>
+                    <form action="Registroe" method="post">
+                        <input type="text" class="campos" name="user" placeholder="Usuario" required="required"
+                            maxlength="20" />
+                        <br>
+                        <input type="password" class="campos" name="pass" placeholder="Contraseña" required="required"
+                            maxlength="20" />
+                        <br>
+                        <input type="text" class="campos" name="cedula" placeholder="Documento de identidad"
+                            required="required" maxlength="15" />
+                        <br>
+                        <input type="text" class="campos" name="nombres" placeholder="Nombres" required="required"
+                            maxlength="20" />
+                        <br>
+                        <input type="date" class="campos" name="duracion" placeholder="Fecha de nacimiento"
+                            required="required" maxlength="10" />
+                        <br>
+                        <input type="text" class="campos" name="eps" placeholder="Direccion" required="required"
+                            maxlength="15" />
+                        <br>
+                        <input type="text" class="campos" name="arl" placeholder="Telefono" required="required"
+                            maxlength="15" />
+                        <br>
+
+
+                        <br></br><input type="submit" class="btn btn-success" value="Registrar" />
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

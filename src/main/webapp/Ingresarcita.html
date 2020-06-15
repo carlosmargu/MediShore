@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Medico</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="Css/background.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+
+    </head>
+
+    <body style="background-color: lightblue;">
+
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="homeMedico.jsp">MEDISHORE</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Calendario
+                            <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="VerCitasMedico.html">Ver Citas</a></li>
+                            <li><a href="medico?medico=${user.login}.html">Agregar Disponibilidad</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Consulta
+                            <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="Ingresarcita.html">Ingresar Cita</a></li>
+                            <li><a href="Buscarhistoria.html">Ver Historia Clinica</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Personal
+                            <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="Historialcitas.html">Historial Citas</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav> 
+
+        <div class="text-center">
+            <div style="vertical-align: middle;">
+                <h1><b>Ingrese cedula del paciente en consulta</b></h1>
+                <br>
+                <form action="iniciarconsulta" method="GET">
+                    <input type="text" class="campos" name="cc" placeholder="Cedula" required="required"
+                           maxlength="20" />
+                    <br>
+
+                    <br></br><input type="submit" class="btn btn-default" value="Iniciar consulta"/>
+                </form>
+
+            </div>
+        </div>
+    </body>
+</html>
